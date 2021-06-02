@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+    font-family: "Open Sans";
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+    background: #eceff4;
+}
+
+.wrap > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-book-form {
+    width: 320px;
+    height: 240px;
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.05);
+}
+
+.contacts-book-list {
+    width: 320px;
+    height: auto;
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.05);
+}
+
+.delete-contact {
+    border: none;
+    background: #ffffff;
+}
+
+.name-item {
+    color: #333333;
+}
+
+.phone-item {
+    color: #666666;
+    margin-top: 0;
+}
+
+.add {
+    border: none;
+    background: #4d59a1;
+    width: 97px;
+    height: 41px;
+    float: right;
+}
