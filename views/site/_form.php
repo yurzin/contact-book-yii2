@@ -13,22 +13,21 @@ use yii\widgets\MaskedInput;
 
     <?php $form = ActiveForm::begin(); ?>
     <div class="contact">
-        <h4>Добавить контакт</h4>
+        <div class="title-item">Добавить контакт</div>
     </div>
-    <?= $form->field($model, 'name')->textInput(['placeholder' => $model->getAttributeLabel('Имя'), ['unselect' => null]])->label(false) ?>
+    <div class="form-wrap">
+        <?= $form->field($model, 'name')->textInput(['placeholder' => $model->getAttributeLabel('Имя'), ['unselect' => null]])->label(false) ?>
 
-    <?= $form->field($model, 'phone')->widget(
-        MaskedInput::class,
-        [
-            'mask' => '9 999 999 9999',
-            'options' => ['placeholder' => ('Телефон')]
-        ]
-    )->label(false) ?>
-
-    <div class="form-group">
-        <?= Html::submitButton('Добавить', ['class' => 'btn btn-primary add']) ?>
-    </div>
-
+        <?= $form->field($model, 'phone')->widget(
+            MaskedInput::class,
+            [
+                'mask' => '9 999 999 9999',
+                'options' => ['placeholder' => ('Телефон')]
+            ]
+        )->label(false) ?>
+        <div class="form-group">
+            <?= Html::submitButton('Добавить', ['class' => 'btn btn-primary add']) ?>
+        </div>
     <?php ActiveForm::end(); ?>
-
+    </div>
 </div>
