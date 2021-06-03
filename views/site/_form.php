@@ -10,7 +10,6 @@ use yii\widgets\MaskedInput;
 ?>
 
 <div class="contacts-form">
-
     <?php $form = ActiveForm::begin(); ?>
     <div class="contact">
         <div class="title-item">Добавить контакт</div>
