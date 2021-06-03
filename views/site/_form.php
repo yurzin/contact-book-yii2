@@ -12,9 +12,10 @@ use yii\widgets\MaskedInput;
 <div class="contacts-form">
 
     <?php $form = ActiveForm::begin(); ?>
-    <h4>Добавить контакт</h4>
-
-    <?= $form->field($model, 'name')->textInput(['placeholder' => $model->getAttributeLabel( 'Имя' )])->label(false) ?>
+    <div class="contact">
+        <h4>Добавить контакт</h4>
+    </div>
+    <?= $form->field($model, 'name')->textInput(['placeholder' => $model->getAttributeLabel('Имя'), ['unselect' => null]])->label(false) ?>
 
     <?= $form->field($model, 'phone')->widget(
         MaskedInput::class,

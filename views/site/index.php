@@ -18,7 +18,9 @@ use yii\widgets\ListView;
         ]) ?>
     </div>
     <div class="contacts-book-list">
+        <div class="contact-item">
         <h4>Список контактов</h4>
+        </div>
         <?= ListView::widget([
             'dataProvider' => $dataProvider,
             'summary' => false,
